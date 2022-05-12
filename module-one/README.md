@@ -1,4 +1,4 @@
-# plugin-base
+# module-one
 
 ## Project setup
 ```

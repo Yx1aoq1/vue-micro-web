@@ -1,5 +1,5 @@
 {
-  "name": "plugin-base",
+  "name": "module-one",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "element-ui": "^2.15.8",
     "vue": "^2.6.14",
     "vue-router": "3.5.3"
   },

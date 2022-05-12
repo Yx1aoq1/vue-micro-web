@@ -1,12 +1,16 @@
-import { createApp } from 'vue'
-import Antd from 'ant-design-vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
 import router from './plugins/router'
-import 'ant-design-vue/dist/antd.css'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-const app = createApp(App)
+Vue.config.productionTip = false
 
-app
-.use(router)
-.use(Antd)
-.mount('#app')
+Vue.use(VueRouter)
+Vue.use(ElementUI)
+
+new Vue({
+	router,
+	render: h => h(App)
+}).$mount('#app')
